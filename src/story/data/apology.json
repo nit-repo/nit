@@ -1,0 +1,43 @@
+[
+  {
+    "id": "page-1",
+    "title": "I hurt you always",
+    "subHeadline": "And I never stopped to think about how that made you feel.",
+    "media": { "type": "image", "src": "/images/page1.jpg", "alt": "Reflection" },
+    "button": { "label": "Next", "action": "next" },
+    "background": { "gradient": "linear-gradient(160deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%)" }
+  },
+  {
+    "id": "page-2",
+    "title": "I lose control easily",
+    "subHeadline": "My words became weapons, and I am deeply sorry for that.",
+    "media": { "type": "image", "src": "/images/page2.jpg", "alt": "Storm" },
+    "button": { "label": "Next", "action": "next" },
+    "background": { "gradient": "linear-gradient(160deg, #200122 0%, #6f0000 100%)" }
+  },
+  {
+    "id": "page-3",
+    "title": "I took you for granted",
+    "subHeadline": "You deserved so much better than what I gave you.",
+    "media": { "type": "image", "src": "/images/page3.jpg", "alt": "Empty hands" },
+    "button": { "label": "Next", "action": "next" },
+    "background": { "gradient": "linear-gradient(160deg, #0f2027 0%, #203a43 50%, #2c5364 100%)" }
+  },
+  {
+    "id": "page-4",
+    "title": "I want to do better",
+    "subHeadline": "This is not just words. This is a promise I intend to keep.",
+    "media": { "type": "image", "src": "/images/page4.jpg", "alt": "New beginning" },
+    "button": { "label": "Next", "action": "next" },
+    "background": { "gradient": "linear-gradient(160deg, #134e5e 0%, #71b280 100%)" }
+  },
+  {
+    "id": "page-5",
+    "title": "I'm truly sorry",
+    "subHeadline": "From the bottom of my heart. I love you.",
+    "media": { "type": "image", "src": "/images/page5.jpg", "alt": "Heart" },
+    "button": { "label": "Accept ❤️", "action": "finish" },
+    "footer": { "text": "Made with love, just for you." },
+    "background": { "gradient": "linear-gradient(160deg, #c94b4b 0%, #4b134f 100%)" }
+  }
+]

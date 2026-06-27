@@ -1,0 +1,20 @@
+{
+  "accept": {
+    "emoji": "🤝",
+    "title": "Thank you.",
+    "message": "This means everything to me. I will not waste this.",
+    "gradient": "linear-gradient(160deg, #134e5e 0%, #71b280 100%)"
+  },
+  "reject": {
+    "emoji": "💔",
+    "title": "I understand.",
+    "message": "I'm still sorry.I just needed you to know.",
+    "gradient": "linear-gradient(160deg, #4b134f 0%, #c94b4b 100%)"
+  },
+  "default": {
+    "emoji": "💖",
+    "title": "Thank you for reading.",
+    "message": "Whatever you feel right now is valid.",
+    "gradient": "linear-gradient(160deg, #1a1a2e 0%, #16213e 100%)"
+  }
+}

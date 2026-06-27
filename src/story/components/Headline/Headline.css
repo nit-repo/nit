@@ -1,0 +1,18 @@
+.headline {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  animation: fadeSlideUp 0.5s ease both;
+}
+
+.headline--sm  { font-size: clamp(1rem, 3vw, 1.25rem); }
+.headline--md  { font-size: clamp(1.25rem, 4vw, 1.75rem); }
+.headline--lg  { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+.headline--xl  { font-size: clamp(2rem, 7vw, 3.5rem); }
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
