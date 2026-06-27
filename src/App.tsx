@@ -14,7 +14,7 @@ function App() {
     // Reads from environment variables (recommended) or fallback string
     const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL || "https://script.google.com/macros/s/AKfycbwmR6aiMibOdahahs2HqqsnLdz-fjawFPKNlLPfafFqxwCDgVLEZ6EHQm6EjhCF1N-SZw/exec";
 
-    if (GOOGLE_SHEETS_URL && GOOGLE_SHEETS_URL !== "https://script.google.com/macros/s/AKfycbwmR6aiMibOdahahs2HqqsnLdz-fjawFPKNlLPfafFqxwCDgVLEZ6EHQm6EjhCF1N-SZw/exec") {
+    if (GOOGLE_SHEETS_URL) {
       try {
         await fetch(GOOGLE_SHEETS_URL, {
           method: 'POST',
