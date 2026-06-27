@@ -15,7 +15,7 @@ const responses: Record<string, { emoji: string; title: string; message: string;
   reject: {
     emoji: '💔',
     title: 'I understand.',
-    message: "I'm still sorry. You don't owe me anything — I just needed you to know.",
+    message: "I'm still sorry.I understand it it's my fault.",
     gradient: 'linear-gradient(160deg, #4b134f 0%, #c94b4b 100%)',
   },
   default: {
