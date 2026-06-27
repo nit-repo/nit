@@ -11,15 +11,22 @@ function App() {
   const handleFinish = async (result?: string) => {
     const value = result ?? 'default';
 
-    // Save response to responses.txt via the local server
-    try {
-      await fetch('http://localhost:3001/response', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ result: value }),
-      });
-    } catch {
-      console.warn('Could not save response — is the server running?');
+    // Reads from environment variables (recommended) or fallback string
+    const GOOGLE_SHEETS_URL = import.meta.env.VITE_GOOGLE_SHEETS_URL || "https://script.google.com/macros/s/AKfycbwmR6aiMibOdahahs2HqqsnLdz-fjawFPKNlLPfafFqxwCDgVLEZ6EHQm6EjhCF1N-SZw/exec";
+
+    if (GOOGLE_SHEETS_URL && GOOGLE_SHEETS_URL !== "https://script.google.com/macros/s/AKfycbwmR6aiMibOdahahs2HqqsnLdz-fjawFPKNlLPfafFqxwCDgVLEZ6EHQm6EjhCF1N-SZw/exec") {
+      try {
+        await fetch(GOOGLE_SHEETS_URL, {
+          method: 'POST',
+          mode: 'no-cors', // Prevents browser security blocks
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ result: value }),
+        });
+      } catch (e) {
+        console.error('Error saving to Google Sheets:', e);
+      }
+    } else {
+      console.warn('Google Sheets URL not configured.');
     }
 
     setFinishResult(value);
